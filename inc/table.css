@@ -1,0 +1,52 @@
+#wrapper {
+	/* width: 800px; */
+	margin-left: auto;
+	margin-right: auto;
+	/* background-color: #EFEFEF; */
+}
+#controlsDiv {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding-top: 5px;
+}
+table {
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 11px; 
+	font-family: Arial;
+	background-color: #EFEFEF;
+	-moz-border-radius: 0.5em;
+}
+td {
+	text-align: center;
+	position: relative;
+	/* border: 0.5px solid #FFF; */
+}
+tr .editing {
+	text-align: center;
+	border: 0;
+	background-color: #FF7F7F;
+	max-width: 12em;
+	position: relative;
+	padding: 0;
+}
+tr:hover{
+	background-color: #FFAFAF;
+}
+th {
+	background-color:#AACCEE;
+}
+td, th {
+	padding: 0;
+	min-width: 10em;
+	overflow: hidden;
+}
+.editing {
+	background-color: #AACCEE;
+}
+textarea {
+	border: 0;
+	padding: 0;
+	resize: none; /* Important for webkit to disable resizing */
+}
