@@ -49,13 +49,13 @@ else {
 	<form name="verificationForm" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>" autocomplete="off">
 		<label for="u">Username</label>
 		<input type="text" name="u" id="u" maxlength="24" tabindex="1" />
-		<span class="formError" id="userError"><? echo $form->error("u"); ?></span>
+		<span class="formError" id="userError"><?php echo $form->error("u"); ?></span>
 		
 		<label for="pass">Verification Code</label>
-		<input type="text" name="e" id="e" <?php if(isset($_REQUEST['e'])) echo " readonly " ?> value="<? echo $form->value("e"); ?>" tabindex="2" />
+		<input type="text" name="e" id="e" <?php if(isset($_REQUEST['e'])) echo " readonly " ?> value="<?php echo $form->value("e"); ?>" tabindex="2" />
 		
 		<label for="pass">Activation Code</label>
-		<br /><input type="text" name="v"  <?php if(isset($_REQUEST['v'])) echo " readonly " ?> value="<? echo $form->value("v"); ?>" />
+		<br /><input type="text" name="v"  <?php if(isset($_REQUEST['v'])) echo " readonly " ?> value="<?php echo $form->value("v"); ?>" />
 		
 		<input type="submit" name="doActivate" onclick="return processForm();" id="doActivate" value="Activate account" />
 	</form>

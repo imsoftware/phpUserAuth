@@ -51,12 +51,12 @@ else {
 	<h3>Please Login</h3>
 	<form name="loginForm" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>" autocomplete="off">
 		<label for="username">Username</label>
-		<input type="text" name="user" id="user" maxlength="24" value="<? echo $form->value("user"); ?>" tabindex="1" />
-		<span class="formError" id="userError"><? echo $form->error("user"); ?></span>
+		<input type="text" name="user" id="user" maxlength="24" value="<?php echo $form->value("user"); ?>" tabindex="1" />
+		<span class="formError" id="userError"><?php echo $form->error("user"); ?></span>
 
 		<label for="pass">Password</label>
 		<input type="password" name="pass" id="pass" value="" tabindex="2" />
-		<span class="formError" id="passError"><? echo $form->error("pass"); ?></span>
+		<span class="formError" id="passError"><?php echo $form->error("pass"); ?></span>
 		
 		<br /><input type="hidden" name="to" value="<?php echo isset($_GET['to']) ? $_GET['to'] : ''; ?>" />
 		<input type="submit" name="doLogin" id="doLogin" onclick = 'return processForm()' value="Login" />

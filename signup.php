@@ -66,20 +66,20 @@ else {
 	<h3>Enter the following details</h3>
 	<form name="signupForm" id="signupForm" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>" autocomplete="off">
 		<label for="username">Username</label>
-		<input type="text" name="user" id="user" maxlength="24" value="<? echo $form->value("user"); ?>" />
-		<span class="formError" id="userError"><? echo $form->error("user"); ?></span>
+		<input type="text" name="user" id="user" maxlength="24" value="<?php echo $form->value("user"); ?>" />
+		<span class="formError" id="userError"><?php echo $form->error("user"); ?></span>
 
 		<label for="pass">Password</label>
 		<input type="password" name="pass" id="pass" />
-		<span class="formError" id="passError"><? echo $form->error("pass"); ?></span>
+		<span class="formError" id="passError"><?php echo $form->error("pass"); ?></span>
 
 		<label for="repass">Confirm Password</label>
 		<input type="password" name="repass" id="repass" />
-		<span class="formError" id="repassError"><? echo $form->error("repass"); ?></span>
+		<span class="formError" id="repassError"><?php echo $form->error("repass"); ?></span>
 
 		<label for="email">Email</label>
-		<input type="text" name="email" id="email" maxlength="100" value="<? echo $form->value("email"); ?>" />
-		<span class="formError" id="emailError"><? echo $form->error("email"); ?></span>
+		<input type="text" name="email" id="email" maxlength="100" value="<?php echo $form->value("email"); ?>" />
+		<span class="formError" id="emailError"><?php echo $form->error("email"); ?></span>
 
 		<label for="name">Your real name</label>
 		<input type="text" name="name" id="name" maxlength="50" value="" />
