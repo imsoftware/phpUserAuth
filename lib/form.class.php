@@ -1,4 +1,5 @@
-<? 
+<?php
+
 /**
  * Form.php
  *
@@ -82,4 +83,3 @@ class Form
 };
 
 $form = new Form();
-?>
