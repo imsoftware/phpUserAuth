@@ -1,4 +1,5 @@
-<?
+<?php
+
 class Util 
 {
 	public static function html2text ( $page ) {
@@ -56,4 +57,3 @@ class Util
 		return trim ( $text );
 	}
 }
-?>

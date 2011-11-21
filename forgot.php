@@ -64,8 +64,8 @@ else {
 	<h3><?php echo $title;?></h3>
 	<form name="forgotForm" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>" autocomplete="off">
 		<label for="email">Enter your email address</label>
-		<input type="text" name="email" id="email" value="<? echo $form->value("email"); ?>" tabindex="2" />
-		<span class="formError" id="emailError"><? echo $form->error("email"); ?></span>
+		<input type="text" name="email" id="email" value="<?php echo $form->value("email"); ?>" tabindex="2" />
+		<span class="formError" id="emailError"><?php echo $form->error("email"); ?></span>
 	
 		<input type="submit" name="doSend" id="doSend" onclick="return processForm();" value="<?php echo $button;?>" />
 
