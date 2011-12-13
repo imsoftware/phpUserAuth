@@ -125,10 +125,12 @@ class UserAuth
  		$pass = $this->escape($pass);
 		
 		$result = $this->db->query("SELECT `{$this->table['id']}`,`{$this->table['pass']}`,`{$this->table['active']}` 
-					FROM ".TBL_USERS." WHERE `{$this->table['user']}` = '$uname' LIMIT 1");
+					FROM ".TBL_USERS." 
+					WHERE `{$this->table['user']}` = '$uname' 
+					OR `{$this->table['email']}` = '$uname' LIMIT 1");
 		// If user not found
 		if ($result->num_rows == 0) {
-			return $this->error("Username Not Found");
+			return $this->error("User not found!");
 		}
 		// If user is found
 		else {

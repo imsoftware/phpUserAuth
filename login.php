@@ -50,7 +50,7 @@ else {
 <div class="inputArea">
 	<h3>Please Login</h3>
 	<form name="loginForm" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>" autocomplete="off">
-		<label for="username">Username</label>
+		<label for="username">Username or Email</label>
 		<input type="text" name="user" id="user" maxlength="24" value="<?php echo $form->value("user"); ?>" tabindex="1" />
 		<span class="formError" id="userError"><?php echo $form->error("user"); ?></span>
 
