@@ -1,1 +1,31 @@
-Coming soon, very soon!
++++ phpUserAuth +++
+
+http://iambot.net/projects/phpuserauth/
+https://github.com/Checksum/phpUserAuth
+
+- About
+- Requirements
+- Installation
+- Contributors
+
++++ About +++
+A comprehensive, secure and flexible user authentication/management system for PHP 5+ using MySQLi
+
++++ Requirements +++
+PHP 5+ as the core classes are OO
+MySQLi support
+MySQL 5+ database server
+
++++ Installation +++
+1. Download
+2. Unzip
+3. Go to: /lib/config.php and enter the required information
+4. Upload
+5. Be happy
+
++++ Contributors +++
+Checksum (Srinath)
+kaolin (kaolin fire)
+
+Thank you!
+/imsoftware.de
